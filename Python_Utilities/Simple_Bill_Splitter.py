@@ -1,0 +1,17 @@
+"""Write a python script thatbhelps split a bill evenly between friends"""
+
+members = int(input("How many people are in the group? "))
+names = []
+for member in range(1, members+1):
+    name = input(f"What is the name of member {member}? ")
+    names.append(name)
+
+total_bill = int(input("What is the total bill? "))
+split_bill = total_bill/members
+rounded_split_value = format(split_bill,".2f")
+
+print(f"Each member will pay - {rounded_split_value}")
+print("\nFinal output: ")
+for name in names:
+    print(f"  {name} owes {rounded_split_value}")
+

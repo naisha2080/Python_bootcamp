@@ -9,7 +9,7 @@ def collect_student_data():
     students = {}
     
     while True:
-        name = input("Enter the student name or  ").strip()
+        name = input("Enter the student name or Done: ").strip()
 
         if name.lower() == "done":
             break
@@ -42,8 +42,8 @@ def display_reports(students):
     print("-" * 30)
     print(f"Total Students: {len(students)}")
     print(f"Average marks for students: {average:.2f}")
-    print(f"Highest marks: {max_score} by {','.join(topper)}")
-    print(f"Lowest marks: {min_score} by {','.join(bottomer)}")
+    print(f"Highest marks: {max_score} by {', '.join(topper)}")
+    print(f"Lowest marks: {min_score} by {', '.join(bottomer)}")
 
     print("-" * 30)
     print("Detailed Marks: ")

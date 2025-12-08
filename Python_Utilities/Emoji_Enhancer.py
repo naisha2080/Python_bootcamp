@@ -28,6 +28,6 @@ for word in message.split(): #Return a list of the substrings in the string.
     else:
         updated_word.append(word)
 
-updated_message = " ".join(updated_word) #the list (updated_message) is now a string
+updated_message = " ".join(updated_word) #the list (updated_message) is now a string, join convert it to string
 print("\n Enhanced message: ")
 print(updated_message)

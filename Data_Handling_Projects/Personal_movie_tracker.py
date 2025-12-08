@@ -16,6 +16,7 @@ def load_movies():
 
 def save_movies(movies):
     with open(FILENAME, "w", encoding="utf-8") as f:
+        #json.dump() takes Python data(movies) and writes it into a file in JSON format.
         json.dump(movies, f, indent=2)
 
 
@@ -29,8 +30,8 @@ def add_movies(movies):
     try:
         rating = float(input("Enter rating(0-10): "))
         if not (0 <= rating <= 10):
-            raise ValueError
-    except ValueError:
+            raise ValueError #User enters 15 → YOU raise ValueError            
+    except ValueError: #User enters text → float() fails → Python raises ValueError
         print("Please enter valid number")
         return
     

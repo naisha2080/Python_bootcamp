@@ -1,6 +1,7 @@
 """
 Created a python script that takes a message and adds emojis after specific keywords to make it more expressive.
 
+This code breaks your sentence into words, cleans punctuation, checks for matching emojis, builds a new list of modified words, then joins everything back into a final sentence.
 
 """
 # get a dictionary
@@ -21,7 +22,7 @@ updated_word = []
 # process each word
 for word in message.split(): #Return a list of the substrings in the string.
     cleaned_word = word.lower().strip(".,!?")
-    emoji = emoji_map.get(cleaned_word, "")
+    emoji = emoji_map.get(cleaned_word, "") #Give me emoji for this word or empty string if none exists.”
     if emoji:
         updated_word.append(f"{word} {emoji} ")
     else:

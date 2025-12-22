@@ -1,11 +1,11 @@
 """
 Daily Learning Journal Logger
 
-Buold a python script thst sllows you to maintain a daily learning journal. Each entry will be saved into a `.txt` file along with a tiemstamp.
+Buold a python script that allows you to maintain a daily learning journal. Each entry will be saved into a `.txt` file along with a tiemstamp.
 
 What it does?
 -Ask the user what they learned today.
--Add the enrty to a file
+-Add the entry to a file
 -Each entry should include the date and time it was written.
 -The journal should append new entries instead of overwriting.
 

@@ -1,3 +1,0 @@
-python -u "c:\Users\MY PC\Desktop\Python Bootcamp\Python_Utilities\Task_Manager.py" || not done
-python -u "c:\Users\MY PC\Desktop\Python Bootcamp\Python_Utilities\Task_Manager.py" || not done
-Learn Python || not done

@@ -28,6 +28,7 @@ def password_strength_checker(password):
         issues.append("Should have at least one special character")
     return issues
 
+#NEW LEARNING
 def generate_strong_password(length=12):
     char = string.ascii_letters + string.digits + string.punctuation
     return "".join(random.choice(char) for _ in range (length))

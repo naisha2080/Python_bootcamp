@@ -17,9 +17,12 @@ letter → number → shift → wrap → letter again
 def encrypt(message, key):
     result = ""
     for char in message:
-        base = ord('A') if char.isupper() else ord('a')
-        shifted = (ord(char) - base + key) % 26 + base
-        result += chr(shifted)
+        if char.isalpha():
+            base = ord('A') if char.isupper() else ord('a')
+            shifted = (ord(char) - base + key) % 26 + base
+            result += chr(shifted)
+    else:
+        result += char #if not an alphabet, we'll simply add it to the result.
     return result
 
 
@@ -28,7 +31,7 @@ def decrypt(message, key):
 
 
 print("Secret message program")
-choice = input("Do you want to E(Encrypt) or D(Decrypt) ? ").strip().lower()
+choice = input("Do you want to E(Encrypt) or D(Decrypt) ?").strip().lower()
 
 if choice == "e":
     text = input("Enter your encrypted message: \n")

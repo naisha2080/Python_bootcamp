@@ -3,6 +3,7 @@ CLI Contact Book (CSV_Powered)
 
 Created a terminal-based contact book tool that stores and manages contacts using a CSV file.
 
+csv.reader VS csv.DictReader
 """
 import csv
 import os

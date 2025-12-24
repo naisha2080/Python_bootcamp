@@ -1,5 +1,5 @@
 """
-Docstring for Data_Handling_Projects.JSON-to-Excel_Converter_tool
+Docstring for Data_Handling_Projects.JSON-to-CSV_Converter_tool
 
 Created a Python Utility that reads structured data (like you would get from an API) from a `.json` file and converts it to a CSV file that can be opened in Excel.
 

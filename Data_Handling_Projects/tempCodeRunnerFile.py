@@ -1,0 +1,8 @@
+plt.figure(figsize=(10, 7))
+    plt.plot(dates, temps, marker = 'o')
+    plt.grid(True)
+    plt.title("Temperature over time")
+    plt.xlabel("Date")
+    plt.ylabel("Temperature")
+    plt.tight_layout()
+    plt.show()

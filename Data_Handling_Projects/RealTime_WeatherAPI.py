@@ -61,12 +61,7 @@ def weather_log():
 def view_logs():
     with open(FILENAME, "r", encoding="utf-8") as f:
         reader = csv.reader(f)
-        rows = list(reader)
 
-        if len(rows) <= 1:
-            print("No Entries")
-            return
-        
         for row in reader:
             print(f"{row[0]} | {row[1]} | {row[2]} | {row[3]}")
 

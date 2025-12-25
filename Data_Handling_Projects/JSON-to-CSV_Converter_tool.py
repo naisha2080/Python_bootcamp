@@ -25,6 +25,7 @@ def load_json_data(filename):
     with open(filename, "r", encoding="utf-8") as f:
         try:
             return json.load(f)
+        #json.load(f) = read JSON from a file and turn it into a Python object you can work with.
         except:
             print("Invalid JSON format! ")
 

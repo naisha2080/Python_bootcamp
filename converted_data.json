@@ -1,0 +1,37 @@
+[
+  {
+    "id": "101",
+    "name": "Rahul",
+    "email": "rahul@gmail.com",
+    "location": "Delhi",
+    "is_active": "True"
+  },
+  {
+    "id": "102",
+    "name": "Riya",
+    "email": "riya@gmail.com",
+    "location": "Lucknow",
+    "is_active": "True"
+  },
+  {
+    "id": "103",
+    "name": "Aman",
+    "email": "aman@gmail.com",
+    "location": "Delhi",
+    "is_active": "False"
+  },
+  {
+    "id": "104",
+    "name": "Ayush",
+    "email": "ayush@gmail.com",
+    "location": "Kolkata",
+    "is_active": "True"
+  },
+  {
+    "id": "105",
+    "name": "Anushka",
+    "email": "anushka@gmail.com",
+    "location": "Jaipur",
+    "is_active": "False"
+  }
+]

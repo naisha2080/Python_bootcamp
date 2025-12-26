@@ -27,7 +27,10 @@ def visualize_weather():
         return
     
     plt.figure(figsize=(10, 7))
-    plt.plot(dates, temps, marker='o')
+    fig, ax = plt.subplots()
+    ax.set_facecolor('black')
+    ax.plot(dates, temps, marker='s', linestyle='--', color='green')
+    plt.legend()
     plt.grid(True)
     plt.title("Temperature over time")
     plt.xlabel("Date")

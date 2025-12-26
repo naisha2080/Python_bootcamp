@@ -1,0 +1,13 @@
+{
+    "user":{
+        "id": 1,
+        "name": "Aman",
+        "email": "aman123@gmail.com",
+        "address":{
+            "city":"Delhi",
+            "pincode": 110011
+        }
+    },
+    "roles": ["admin", "editor"],
+    "is_active": true
+}

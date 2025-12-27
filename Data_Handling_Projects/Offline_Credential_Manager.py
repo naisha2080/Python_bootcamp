@@ -17,9 +17,11 @@ import string
 
 VAULT_FILE = "vault.txt"
 
+#New Learning
 def encode(text):
     return base64.b64encode(text.encode()).decode()
 
+#New Learning
 def decode(text):
     return base64.b64decode(text.encode()).decode()
 

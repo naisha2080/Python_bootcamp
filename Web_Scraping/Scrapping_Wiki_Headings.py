@@ -30,9 +30,10 @@ def get_h2_headers(url):
     headers = []
     for tag in h2_tags:
         header_text = tag.get_text(strip=True)
-
         headers.append(header_text)
-    print(headers)
+    
+    for h in headers:
+        print(h)
 
 
 get_h2_headers(URL)
